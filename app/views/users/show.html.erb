@@ -1,3 +1,5 @@
+<%= @user.full_name %> </br>
+
 <% @tracks.each do |track| %>
   <%= track.track_name  %> </br>
   <%= track.user.display_name %>
@@ -17,3 +19,4 @@
   });
   });
 <% end %>
+

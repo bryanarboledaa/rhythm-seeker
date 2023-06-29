@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.music-player {
+    width: 25%;
+    margin: 20px 0;
+}
