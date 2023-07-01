@@ -1,4 +1,4 @@
-<%= "Upload Here!" %>
+<%= "Upload Here" %>
 
 <%= form_with(url: upload_path, method: 'post', local: true, multipart: true) do |form| %>
   <%= form.file_field 'track_file', required: true %>
