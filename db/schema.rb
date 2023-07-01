@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_28_213647) do
     t.index ["user_id"], name: "index_tracks_on_user_id"
   end
 
-  create_table "users_devise", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "full_name", default: "", null: false
     t.string "display_name", default: "", null: false
     t.string "email", default: "", null: false
@@ -39,5 +39,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_28_213647) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "tracks", "users_devise"
+  add_foreign_key "tracks", "users"
 end

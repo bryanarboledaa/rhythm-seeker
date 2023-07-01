@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-    sessions: 'users_devise/sessions',
-    registrations: 'users_devise/registrations'
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
   }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
